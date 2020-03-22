@@ -1,0 +1,128 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --pink-primary: #ff7eee;
+    --pink-secondary: #df49a6;
+    --transition-speed: 600ms;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.g-navbar {
+    width: 5rem;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 200ms ease;
+}
+
+.g-navbar-nav {
+    list-style: none;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.g-nav-item {
+    width: 100%;
+}
+
+.g-nav-item:last-child {
+    margin-top: auto;
+}
+
+.g-nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.g-nav-link:hover {
+    filter: grayscale(100%) opacity(0.7);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.g-link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.g-nav-link i{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.g-navbar:hover{
+    width: 16rem;
+}
+
+.g-navbar:hover .g-link-text{
+    display: block;
+}
+
+.g-logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.2ch;
+    width: 100%;
+}
+
+.g-logo i{
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+
+g-navbar:hover .g-logo i{
+    transform: rotate(-180deg);
+}
+
+.material-icons.g-color{
+    color: var(--pink-primary);
+    transition: var(--transition-speed);
+}
+
+.material-icons.g-color:hover{
+    color: var(--pink-secondary);
+}
+
+
+
