@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link href="http://nodemodules.web/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app2.css') }}" rel="stylesheet">
     <link href="http://nodemodules.web/material-components-web/dist/material-components-web.min.css" rel="stylesheet">
     <title>Shorai Development</title>
 </head>
